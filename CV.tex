@@ -1,0 +1,178 @@
+%% start of file `jdoe_classic.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+%
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Alexandre}
+\familyname{ABRAHAM}
+\title{Ingénieur de recherche en IA}
+\address{22, boulevard Kellermann\\75013 Paris}  % for classic style
+%\address{12 somestreet, 3456 somecity} % for casual style
+\phone{06 24 98 86 56}
+\email{abraham.alexandre@gmail.com}
+\extrainfo{\weblink{http://goulagman.free.fr}}
+\photo[64pt]{zoom.png} % also optional, and the optional argument is the height the picture must be resized to
+\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+\hypersetup{backref,
+colorlinks=true}
+
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+%\renewcommand{\firstnamefont}{\fontsize{20}{22}\sffamily\mdseries\upshape}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv
+%\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+%\makequote
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+%\color{firstnamecolor}\rule{\textwidth}{.25ex}
+\enlargethispage{2cm}
+
+\color{black}
+\enlargethispage{1cm}
+
+
+\section{Expériences professionnelles}
+
+\vspace{-0.2cm}
+\cventry{Janvier 2011 -- Aujourd'hui}{Consultant en informatique}{\includegraphics[width=3cm]{harmonie_logo.png}}{Paris}{Crédit Agricole Technologies}{Expert Java sur le serveur d'application mobile iBudget. Maintenance et évolution de la plateforme de production.}
+
+\vspace{-0.4cm}
+
+\cventry{Avril -- Septembre 2010}{\textcolor{red}{Stagiaire Recherche en Intelligence Artificielle}}{\includegraphics[width=3.5cm]{thales.jpg}}{\'Elancourt}{Thales Systèmes Aéroportés -- Laboratoire d'Intelligence Artificielle}{Conception d'agents intelligents dirigés par des buts : systèmes multi-agents}
+
+\vspace{-0.4cm}
+
+\cventry{Octobre 2009 -- Janvier 2010}{Packaging de libCINI}{\includegraphics[width=1.6cm]{upmc.png}}{Paris}{Bibliothèque d'initation au C destiné aux License 1 Informatique}{
+Création d'un installeur Windows et adaptation de l'éditeur de texte Geany aux débutants}
+
+\vspace{-0.4cm}
+\cventry{Mars 2009 -- Août 2009}{\textcolor{red}{Stage d'ingénieur chercheur -- Projet SMACH}}{\includegraphics[width=2cm]{edf.jpg}\hspace{.5cm}\includegraphics[width=.9cm]{lip6.png}}{Paris}{Simulation Multi Agent du Comportement Humain en Java}
+{Pour SMA participatif : refactoring de l'interface et du modèle, ajout de nombreuses fonctionnalités, implémentation d'un apprentissage par renforcement.}
+
+\vspace{-0.6cm}
+\cventry{Septembre 2007 -- F\'evrier 2008}{Stage de d\'eveloppement C++}{\includegraphics[width=2.5cm]{AR.png}}{Paris}{\small \'Etude de l'impl\'ementation d'\'emotions, maintenance et d\'eveloppement de la plateforme embarqu\'ee}
+{}
+\closesection{}
+
+
+
+\section{Formation}
+
+\vspace{-0.5cm}
+\cventry{2009 -- 2010}{\textcolor{red}{Master 2 informatique IAD}}{\includegraphics[width=2.4cm]{upmc.png}}{Paris}{Intelligence Artificielle et D\'ecision}{\small Sp\'ecialit\'e Agents Intelligents, Apprentissage et Décision. \'Etude des Syst\`emes Multi-Agents, de l'apprentissage, de la d\'ecision, de la logique floue\ldots}
+
+\vspace{-0.7cm}
+\cventry{2007 -- 2009}{\textcolor{red}{\'Etudiant chercheur}}{\includegraphics[width=1.5cm]{lrde_big.png}}{Kremlin-Bicêtre}{Laboratoire de Recherche et Développement d'EPITA}{\small Projet Olena -- programmation générique et performante pour le traitement d'images. Apprentissage du métier de chercheur, g\'enie logiciel, réalisation de séminaires sur ConceptC++ et l'impl\'ementation d'un algorithme de ligne de partage des eaux.}
+
+\vspace{-0.4cm}
+\cventry{2004 -- 2009}{\'Ecole d'Ingénierie en Informatique}{\includegraphics[width=1.5cm]{epita_light.jpg}}{Kremlin-Bicêtre}{École Pour l'Informatique et les Techniques Avancées}{Prépa type Maths sup/spé : \textit{major de promotion, Développement d'un logiciel de simulation de SMA}. Cycle ingénierie : \textcolor{red}{\textit{Sp\'ecialisation CSI orient\'ee recherche (Calcul Scientifique et Image), nombreux projets de développement et IA, mention bien.}}}
+
+\cventry{2003}{Baccalauréat Général Scientifique spé SVT}{Institution Notre Dame}{Sannois}{Mention bien}{}
+\closesection{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{On the design of modern curriculum vit\ae{}s}}
+%\cvitem{supervisors}{Pr P. Picasso and Pr G. Klimt}
+%\cvitem{description}{\small Study of the complex design of a curriculum vit\ae{}, also known as ``rÃ©sumÃ©''. In my opinion, a good design needs to be show the personality of its author. Some people will thus prefer a more classic style, and others will be more audacious\dots}
+
+\newpage{}
+
+\section{Enseignement}
+\vspace{-0.2cm}
+\cventry{2009 -- 2010}{Professeur pour classes de 1\up{ière} et 2\up{nde}}{\includegraphics[width=3cm]{oiio.png}}{Paris}{Math\'ematiques, architecture matérielle, algorithmique}{}
+
+\vspace{-0.4cm}
+\cventry{2006 -- 2010}{Professeur pour classe préparatoire}{\includegraphics[width=1.5cm]{epita_light.jpg}}{Kremlin-Bicêtre}{Informatique th\'eorique et pratique, math\'ematiques, algorithmique}{}
+\closesection{}
+
+\section{Compétences}
+\cvcomputer{Systèmes d'exploitation}{\textbf{Linux, Windows, }OpenSolaris, BSD}{Logiciels}{Photoshop, PowerAMC, Word, Excel, Powerpoint}
+\cvcomputer{Programmation}{\textbf{OCaml, Java, C/C++/C\#,} Delphi, Matlab, Prolog}{Scripting}{PHP, Shell, Ruby}
+\cvcomputer{Scientifique}{Scilab, Matlab}{Typographie}{\LaTeX}
+\cvcomputer{Web design}{XHTML, CSS, Javascript}{Base de données}{MySQL, PostGRESQL}
+\cvcomputer{Intelligence Artificielle}{\textbf{SMA, Apprentissage,} Décision, Fouille de données}{Plateformes SMA}{Jade, Jason}
+\closesection{}
+
+\section{Langues}
+\cvlanguage{Français}{Langue maternelle}{}
+\cvlanguage{Anglais}{Lu, écrit, parlé (985 au TOEIC)}{}
+\cvlanguage{Espagnol et Italien}{Notions}{}
+\closesection{}
+
+
+%\section{Interests}
+%\cvitem{design}{\small I am a design fan, especially when it comes to typography and photography.}
+%\cvitem{adventure sports}{\small I like practicing adventure sports like skiing, rock climbing and scuba diving, and have been a boy scout for five years.}
+%\cvitem{travelling}{\small I have been living abroad during my childhood, and love travelling around the world.}
+
+\section{Intérêts}
+\cvitem{Associations}{\small Secr\'etaire et contributeur pour le projet Instantbird : \url{http://www.instantbird.com}\\
+Secr\'etaire du club ENAC (jeux de soci\'et\'e)}
+\cvitem{Musique}{\small Ocarina, niveau débutant}
+\cvitem{Hobbies}{\small Informatique (IA), Internet, Lecture, Jeux de rôles}
+\cvitem{Divers}{\small Titulaire du permis B}
+\closesection{}
+%\section{Section with a list}
+%\cvlistitem{Single item.}
+%\cvlistitem{Another single item.}
+%\cvlistdoubleitem{Double\dots{}}{\dots{} item.}
+%\cvlistdoubleitem{Another double\dots{}}{\dots{} item.}
+%\closesection{}
+
+%\section{Section with your own content}\closesection
+%Your content here, inside the normal \LaTeX{} environment. You can use any regular \LaTeX{} command, display mathematics
+%\[e =m\,c^2,\]
+%put some table or figure, \dots
+
+%\emptysection{}
+%\cvitem{Now}{Back to moderncv layout, without making a new section :-)}
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{jdoe_publications}
+
+\end{document}
+
+
+%% end of file `jdoe_classic.tex'.
