@@ -1,0 +1,183 @@
+%% start of file `jdoe_classic.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+%
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[super]{nth}
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Alexandre}
+\familyname{ABRAHAM}
+\title{PhD Student in Machine Learning}
+\address{22 bis, rue Saint Vincent\\78580 Maule, \textsc{France}}  % for classic style
+\phone{+33 6 24 98 86 56}
+\email{abraham.alexandre@gmail.com}
+\extrainfo{\weblink{http://www.twinee.fr}}
+\photo[64pt]{zoom.png} % also optional, and the optional argument is the height the picture must be resized to
+\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+\hypersetup{backref,
+colorlinks=true}
+
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+%\renewcommand{\firstnamefont}{\fontsize{20}{22}\sffamily\mdseries\upshape}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv
+%\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+%\makequote
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+%\color{firstnamecolor}\rule{\textwidth}{.25ex}
+\enlargethispage{2cm}
+
+\color{black}
+\enlargethispage{1cm}
+\vspace{-0.4cm}
+\section{Thesis}
+\cvitem{Title}{\textbf{Learning functional brain atlases modeling inter-subject
+                       variability}}
+\cvitem{Supervisors}{Dimitris SAMARAS (Stony Brook University -- Centrale
+    Paris)\\ Gael VAROQUAUX (INRIA)}
+
+    \cvitem{Research Interests}{My goal
+        is to use resting state function MRI data to
+        set up a functional atlas of the brain, along with an across-subject
+        variability model, taking into account neuroanatomical priors.}
+    \cvlistitem{Resting State Functional Magnetic Resonance Imaging}
+    \cvlistitem{Sparse dictionary learning (with TV+L1 regularization: [MICCAI
+    2013])}
+    \cvlistitem{Stochastic Methods}
+    \cvlistitem{Clustering}
+
+\closesection{}
+\vspace{-0.5cm}
+
+\section{Publications}
+\cvitem{MICCAI 2013}{\textbf{Extracting brain regions from rest fMRI with
+    total-variation constrained dictionary learning} -- \textit{
+        Alexandre ABRAHAM, Elvis DOHMATOB, Bertrand THIRION, Dimitris SAMARAS
+and Gaël VAROQUAUX}}
+\closesection{}
+
+\section{Conferences attended}
+\cvitem{May 14-15, 2013}{Big data, theoretical and practical challenges,
+Paris (IHP)}
+\cvitem{Aug. 23-27, 2012}{Euroscipy, Brussels}
+\cvitem{July 2-4, 2012}{Pattern Recognition in Neuroimaging, London}
+\closesection{}
+
+\section{Summer schools}
+\cvitem{July 9-13, 2012}{Biomedical Image Analysis Summer School: Modalities,
+    Methodologies \& Clinical Research, Paris}
+\closesection{}
+
+\section{Education}
+\cventry{December 2012 -- Today}{PhD student in machine learning}{INRIA Saclay}{Neurospin Saclay}{INRIA --
+CEA -- Paris Sud University}{In the Parietal Team directed by Bertrand THIRION.}{}
+\vspace{-0.4cm}
+
+\cventry{April -- September 2010}{Master's Degree final
+internship}{Thales}{\'Elancourt}{Thales Air Systems -- Artificial Intelligence
+Laboratory}{\small Adding goals to the multi-agent framework used to planify
+mission of autonomous drones.}
+\vspace{-0.4cm}
+
+\cventry{2009 -- 2010}{Master's degree in Computer
+science}{UPMC}{Paris}{Artificial Intelligence and Decision}{Machine
+Learning, Decision, Intelligent Agents.}
+\vspace{-0.4cm}
+
+\cventry{2007 -- 2009}{Researcher Student}{LRDE}{Kremlin-Bicêtre}{EPITA Research and Development Laboratory}{\small Olena Project -- generic and efficient programming in C++ applied to image processing. Research activities, software engineering, ConceptC++ study, implementation of a watershed algorithm.}
+\vspace{-0.4cm}
+
+\cventry{March 2009 -- August 2009}{Research engineer internship}{LIP6 -- EDF R\&D}{Paris}{SMACH Project}{Refactoring of a human behavior
+    simulation software. Addition of a Q-Learning algorithm to learn and simulate
+    a typical family behavior from given rules and constraints to estimate
+    energy consumption.}
+\vspace{-0.4cm}
+
+\cventry{2004 -- 2009}{Computer Science Engineering
+School}{EPITA}{Kremlin-Bicêtre}{EPITA -- 2:1 engineer degree}{\small Multi Agent
+System Simulation Platform: ant colony. Specialization in research and
+artificial intelligence. Development of basic projects using neural networks, genetic
+algorithms, text mining, metaheuristic.}
+\closesection{}
+
+\section{Professional Experiences}
+
+\cventry{April 2012 -- November 2012}{Research and Development
+engineer}{INSERM}{Neurospin Saclay}{Inserm --
+CEA}{Design and development of the API \textit{Neuro-Imaging for Scikit Learn}.}
+\vspace{-0.4cm}
+
+\cventry{January 2011 -- March 2012}{IT consultant}{Harmonie
+Technologie}{Paris}{Crédit Agricole Technologies}{Java expert -- Development of
+the mobile application server.}
+\vspace{-0.4cm}
+
+\cventry{October 2009 -- January 2010}{LibCINI Packaging}{UPMC}{Paris}{C initiation library}{
+Conception of a Windows installer and the architecture allowing to generate it.}
+\vspace{-0.4cm}
+
+\cventry{September 2007 -- February 2008}{C++ programming internship}{Aldebaran
+Robotics}{Paris}{Maintenance and development of an embedded platform.}
+{}
+\closesection{}
+
+\section{Skills}
+\cvcomputer{Programming}{Python, C/C++, Java, Ocaml}{Scripting}{Shell, Python}
+\cvcomputer{Scientic}{Scilab, Matlab}{Typography}{\LaTeX}
+\cvcomputer{Web design}{XHTML, CSS, Javascript}{Database}{MySQL, PostGRESQL}
+\closesection{}
+
+\section{Languages}
+\cvlanguage{Français}{Mother tongue}{}
+\cvlanguage{Anglais}{Fluent, TOEIC 985}{}
+\closesection{}
+
+\section{Teaching}
+\cventry{2009 -- 2010}{High School
+teacher}{OIIO Formation}{Paris}{Teaching mathematics, basic
+computer science and algorithms to prepare students for computer science
+baccalaureate.}{}
+
+\vspace{-0.4cm}
+\cventry{2006 -- 2010}{Occasional preparatory class
+teacher}{EPITA}{Kremlin-Bicêtre}{Teaching
+    mathematics and practical work in computer science, mathematics and
+algorithms.}{}
+\closesection{}
+
+
+
+\end{document}
